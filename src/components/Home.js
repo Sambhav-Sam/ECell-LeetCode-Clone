@@ -25,8 +25,7 @@ const Container = styled.main`
   top: 72px;
   padding: 0 calc(3.5vw + 5px);
   &:after {
-    background: url("/images/home-background.png") center center / cover
-      no-repeat fixed;
+    background: rgb(243,244,246);
     content: "";
     position: absolute;
     inset: 0px;

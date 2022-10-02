@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Footer from "./Footer";
 
 const Leftside = () => {
     return <Container>
@@ -6,7 +7,7 @@ const Leftside = () => {
             <UserInfo>
                 <CardBackground>
                     <a>
-                        <img src="/images/avatar2.svg" alt="" style={{ height: "60px" }} />
+                        <img src="/images/avatar2.svg" alt="" />
                     </a>
                     <List>
                         <h4>Test User</h4>
@@ -101,7 +102,7 @@ const Leftside = () => {
                         <p style={{ color: "grey", fontWeight: "bold", fontSize: "11px" }}>X 18</p>
                     </Double>
                 </Full>
-                <p style={{ color: "grey", fontWeight: "bold", alignItems: "center",display:"flex",justifyContent: "center"}}>Show More</p>
+                <p style={{ color: "grey", fontWeight: "bold", alignItems: "center", display: "flex", justifyContent: "center" }}>Show More</p>
             </Item>
             <Item>
                 <ul>
@@ -121,10 +122,9 @@ const Leftside = () => {
                         <p style={{ color: "grey", fontWeight: "bold", fontSize: "11px" }}>X 22</p>
                     </Double>
                 </Full>
-                <p style={{ color: "grey", fontWeight: "bold", alignItems: "center",display:"flex",justifyContent: "center"}}>Show More</p>
+                <p style={{ color: "grey", fontWeight: "bold", alignItems: "center", display: "flex", justifyContent: "center" }}>Show More</p>
             </Item>
         </ArtCard>
-
     </Container>;
 };
 
@@ -155,6 +155,13 @@ const UserInfo = styled.div`
 
 const CardBackground = styled.div`
     display: flex;
+    a{
+    display: flex;
+    height: 60px;
+    margin-right: 10px;
+    background: rgb(160,195,255);
+    border-radius: 5px; 
+    }
 `;
 
 const List = styled.div`
@@ -164,13 +171,14 @@ const List = styled.div`
         margin: 0;
     }
     p{
-        margin: 0;
+        margin: -8px 0;
         color : grey;
         font-size: 12px;
     }
     h5{
         color : grey;
         margin-bottom: 0;
+        margin-top: 12px;
     }
 `;
 
@@ -186,9 +194,14 @@ const AddPhotoText = styled.div`
     height: 25px;
     /* line-height: 1.33; */
     font-weight: 400;
+    &:hover{
+        background-color: #E6E6E8;
+        cursor: pointer;
+    }
 `;
 
 const Widget = styled.div`
+  margin-top: -25px;
   border-bottom: 1px solid rgba(0,0,0,0.15);
   /* padding-top: 12px; */
   /* padding-bottom: 12px; */

@@ -1,15 +1,18 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Container>
       <Content>
         <Nav>
+          <Link to = '/'>
           <Logo>
             <img src="/images/leetcode.svg" alt="" style={{ height: "40px", width: "40px" }} />
           </Logo>
+          </Link>
           <NavListWrap>
-            <NavList className="active">
+            <NavList className="activ">
               <a>
                 <span>Explore</span>
               </a>
@@ -20,9 +23,9 @@ const Header = () => {
               </a>
             </NavList>
             <NavList>
-              <a>
+              <Link to='/contest'>
                 <span>Contest</span>
-              </a>
+              </Link>
             </NavList>
             <NavList>
               <a>
@@ -48,7 +51,9 @@ const Header = () => {
           <img src="/images/notification.svg" alt="" style={{ height: "20px" }} />
           <img src="/images/fire.svg" alt="" style={{ height: "20px" }} />
           <p>2</p>
-          <img src="/images/avatar.svg" alt="" style={{ height: "20px" }} />
+          <a href="https://www.linkedin.com/in/sambhav-sharma-624278226/" target="_blank">
+            <img src="/images/avatar.svg" alt="" style={{ height: "20px" }} />
+          </a>
         </Navright>
 
       </Content>
@@ -61,6 +66,7 @@ const Container = styled.div`
   border-bottom: 1px solid rgba(0,0,0,0.08);
   left: 0;
   padding: 0 24px;
+  height: 60px;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -100,12 +106,12 @@ const NavList = styled.li`
       cursor: pointer; ;
       background: transparent;
       display: flex;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: bold;
       justify-content: center;
       line-height:1.5;
       min-height:42px;
-      min-width: 80px;
+      min-width: 72px;
       position: relative;
       text-decoration: none;
 
@@ -119,9 +125,12 @@ const NavList = styled.li`
   &:active {
     a {
       span {
-        color: rgba(0, 0, 0, 0.9);
+        color: rgba(0, 0, 0, 1);
       }
     }
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -136,7 +145,7 @@ const Navright = styled.li`
       background-color: #F2F3F4;
       border-radius: 5px;
       display: flex;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: bold;
       justify-content: center;
       position: relative;
@@ -145,8 +154,12 @@ const Navright = styled.li`
         background-color:#E6E6E8;
       }
   }
+  a{
+    display: flex;
+  }
   img{
     margin-left: 20px;
+    cursor: pointer;
   }
 `;
 
