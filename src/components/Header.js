@@ -1,63 +1,120 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import "./Header.css"
+import { useState } from "react";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <Container>
-      <Content>
-        <Nav>
-          <Link to = '/'>
-          <Logo>
-            <img src="/images/leetcode.svg" alt="" style={{ height: "40px", width: "40px" }} />
-          </Logo>
-          </Link>
-          <NavListWrap>
-            <NavList className="activ">
-              <a>
-                <span>Explore</span>
-              </a>
-            </NavList>
-            <NavList>
-              <a>
-                <span>Problems</span>
-              </a>
-            </NavList>
-            <NavList>
-              <Link to='/contest'>
-                <span>Contest</span>
-              </Link>
-            </NavList>
-            <NavList>
-              <a>
-                <span>Discuss</span>
-              </a>
-            </NavList>
-            <NavList>
-              <a>
-                <span>Interview</span>
-                <img src="/images/dropdown.svg" alt="" style={{ height: "20px", width: "20px" }} />
-              </a>
-            </NavList>
-            <NavList>
-              <a>
-                <span style={{ color: "orange" }}>Store</span>
-                <img src="/images/dropdown.svg" alt="" style={{ height: "20px", width: "20px" }} />
-              </a>
-            </NavList>
-          </NavListWrap>
-        </Nav>
-        <Navright>
-          <button>Premium</button>
-          <img src="/images/notification.svg" alt="" style={{ height: "20px" }} />
-          <img src="/images/fire.svg" alt="" style={{ height: "20px" }} />
-          <p>2</p>
-          <a href="https://www.linkedin.com/in/sambhav-sharma-624278226/" target="_blank">
-            <img src="/images/avatar.svg" alt="" style={{ height: "20px" }} />
-          </a>
-        </Navright>
+    <>
+      <Container>
+        <Content>
+          <Nav>
+            <div className="wrap">
+              <div className="logo">
+                <Link>
+                  <Log className="ham" id="hamIcon" open={open} onClick={() => setOpen(!open)}>
+                    <img src="/images/hamburger.svg" alt="" style={{ height: "40px", width: "40px" }} />
+                  </Log>
+                </Link>
+              </div>
+              <div className="logo">
+                <Link to='/'>
+                  <Logo>
+                    <img src="/images/leetcode.svg" alt="" style={{ height: "40px", width: "40px" }} />
+                  </Logo>
+                </Link>
+              </div>
+            </div>
+            <NavListWrap className="hide">
+              <NavList className="activ">
+                <a>
+                  <span>Explore</span>
+                </a>
+              </NavList>
+              <NavList>
+                <a>
+                  <span>Problems</span>
+                </a>
+              </NavList>
+              <NavList>
+                <Link to='/contest'>
+                  <span>Contest</span>
+                </Link>
+              </NavList>
+              <NavList>
+                <a>
+                  <span>Discuss</span>
+                </a>
+              </NavList>
+              <NavList>
+                <a>
+                  <span>Interview</span>
+                  <img src="/images/dropdown.svg" alt="" style={{ height: "20px", width: "20px" }} />
+                </a>
+              </NavList>
+              <NavList>
+                <a>
+                  <span style={{ color: "orange" }}>Store</span>
+                  <img src="/images/dropdown.svg" alt="" style={{ height: "20px", width: "20px" }} />
+                </a>
+              </NavList>
+            </NavListWrap>
+          </Nav>
+          <Navright className="hideright">
+            <button>Premium</button>
+            <img src="/images/notification.svg" alt="" style={{ height: "20px" }} />
+            <img src="/images/fire.svg" alt="" style={{ height: "20px" }} />
+            <p>2</p>
+            <a href="https://www.linkedin.com/in/sambhav-sharma-624278226/" target="_blank">
+              <img src="/images/avatar.svg" alt="" style={{ height: "20px" }} />
+            </a>
+          </Navright>
 
-      </Content>
-    </Container>
+        </Content>
+      </Container>
+
+
+
+
+
+      <div className="middle">
+        <NavListWrap1 className="hambur" open={open}>
+          <NavList className="activ">
+            <a>
+              <span>Explore</span>
+            </a>
+          </NavList>
+          <NavList>
+            <a>
+              <span>Problems</span>
+            </a>
+          </NavList>
+          <NavList>
+            <Link to='/contest'>
+              <span>Contest</span>
+            </Link>
+          </NavList>
+          <NavList>
+            <a>
+              <span>Discuss</span>
+            </a>
+          </NavList>
+          <NavList>
+            <a>
+              <span>Interview</span>
+              <img src="/images/dropdown.svg" alt="" style={{ height: "20px", width: "20px" }} />
+            </a>
+          </NavList>
+          <NavList>
+            <a>
+              <span style={{ color: "orange" }}>Store</span>
+              <img src="/images/dropdown.svg" alt="" style={{ height: "20px", width: "20px" }} />
+            </a>
+          </NavList>
+        </NavListWrap1>
+      </div>
+    </>
   )
 };
 
@@ -85,6 +142,12 @@ const Content = styled.div`
 const Logo = styled.span`
   margin-right: -20px;
   `;
+const Log = styled.span`
+  margin-right: -20px;
+  img{
+    background-color:${({ open }) => open ? 'grey' : '#fff'};
+  }
+  `;
 
 const Nav = styled.nav`
 display: flex;
@@ -96,6 +159,15 @@ const NavListWrap = styled.ul`
   display: flex;
   flex-wrap: nowrap;
   list-style-type: none;
+  `;
+const NavListWrap1 = styled.ul`
+  display: none;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  @media (max-width:768px){
+  display:${({ open }) => open ? 'block' : 'none'}
+  /* transitoin : all 0.3s ease-in-out; */
+  }
   `;
 
 const NavList = styled.li`
@@ -128,9 +200,6 @@ const NavList = styled.li`
         color: rgba(0, 0, 0, 1);
       }
     }
-  }
-  @media (max-width: 768px) {
-    display: none;
   }
 `;
 

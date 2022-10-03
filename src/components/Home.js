@@ -22,7 +22,7 @@ const Container = styled.main`
   min-height: calc(100vh - 250px);
   overflow-x: hidden;
   display: block;
-  top: 72px;
+  /* top: 72px; */
   padding: 0 calc(3.5vw + 5px);
   &:after {
     background: rgb(243,244,246);

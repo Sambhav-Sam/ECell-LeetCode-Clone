@@ -82,7 +82,7 @@ const Main = () => {
                         <Right>
                             <thead>
                                 <tr>
-                                    <th>View Submissions <img src="/images/right.svg" alt="" style={{ opacity: "0.5" }} /> </th>
+                                    <th className="back">View Submissions <img src="/images/right.svg" alt="" style={{ opacity: "0.5" }} /> </th>
                                 </tr>
                             </thead>
                         </Right>
@@ -92,140 +92,142 @@ const Main = () => {
                         <tr className="active-row">
                             <Full1>
                                 <Left>
+                                    <a href="https://leetcode.com/contest/weekly-contest-313/">
                                     <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    </a>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">a day ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">The Number of Weak Characters in the Game</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">2 days ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Pacific Atlantic Water Flow</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">2 days left</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Arranging Coins</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">a month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Clone Graph</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">2 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Number of Dice Rolls With Target Sum</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">2 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Max Area of Island</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Binary Tree Cameras</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Minimum Path Sum</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Next Permutation</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Last Sum</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">First Number</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Level Up</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1">Best Time to Buy and Sell Stock IV</td>
+                                    <td className="td1">Three Friends</td>
                                 </Left>
                                 <Right>
-                                    <td className="td2">2 days left</td>
+                                    <td className="t">3 month ago</td>
                                 </Right>
                             </Full1>
                         </tr>
@@ -272,7 +274,7 @@ const Epro = styled.div`
 const Epro1 = styled.div`
   border-radius: 5px;
   height:4px;
-  width:8%;
+  width:30%;
   animation:sambhav 2s ease-in;
   background-color: #8fdad0;
   @keyframes sambhav {
@@ -281,7 +283,7 @@ const Epro1 = styled.div`
         }
 
         to {
-            width: 8%;
+            width: 30%;
         }
     }
   `;
@@ -299,8 +301,22 @@ const Left = styled.div`
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
+  thead{
+    img{
+        height: 20px !important;
+        width: 20px !important;
+    }
+  }
   td{
         font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        color:black;
+        line-height: 0.9;
+        &:hover{
+            color:grey;
+            font-size: 18.1px;
+        }
     }
     @media (max-width: 768px) {
    width:100%;
@@ -335,7 +351,7 @@ const Full1 = styled.div`
 const Mpro1 = styled.div`
   border-radius: 5px;
   height:4px;
-  width:25%;
+  width:50%;
   animation:sambhav1 2s ease-in;
   background-color: #ffc54d;
   @keyframes sambhav1 {
@@ -344,7 +360,7 @@ const Mpro1 = styled.div`
         }
 
         to {
-            width: 25%;
+            width: 50%;
         }
     }
   `;
@@ -358,7 +374,7 @@ const Hpro = styled.div`
 const Hpro1 = styled.div`
   border-radius: 5px;
   height:4px;
-  width:17%;
+  width:80%;
   animation:sambhav3 2s ease-in;
   background-color: #f06864;
   @keyframes sambhav3 {
@@ -367,7 +383,7 @@ const Hpro1 = styled.div`
         }
 
         to {
-            width: 17%;
+            width: 80%;
         }
     }
   `;

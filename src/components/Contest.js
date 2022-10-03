@@ -1,4 +1,4 @@
-import React, { useState,Children } from 'react'
+import React, { useState, Children } from 'react'
 import styled from "styled-components";
 import "./Contest.css"
 import Footer from './Footer';
@@ -20,8 +20,8 @@ const Contest = () => {
                             <a href="" target="_blank">
                                 <img src="/images/air.png" alt="" style={{ height: "154px", width: "100%" }} />
                                 <div className="data">
-                                    <h6>LinkedIn Clone</h6>
-                                    <p>This is a Clone of LinkedIn with Login Page And connected to firebase.</p>
+                                    <h6>Weekly Contest 311</h6>
+                                    <p>Sunday 8:00 AM GMT+5:30</p>
                                 </div>
                             </a>
                         </div>
@@ -30,17 +30,17 @@ const Contest = () => {
                             <a href="" target="_blank">
                                 <img src="/images/aire.png" alt="" style={{ height: "154px", width: "100%" }} />
                                 <div className="data">
-                                    <h6>LinkedIn Clone</h6>
-                                    <p>This is a Clone of LinkedIn with Login Page And connected to firebase.</p>
+                                    <h6>BiWeekly Contest 175</h6>
+                                    <p>Saturday 8:00 AM GMT+5:30</p>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                    <div className="arrow">
-                        <button className="l">◀</button>
-                        <button className="r">▶</button>
-                    </div>
+                <div className="arrow">
+                    <button className="l">◀</button>
+                    <button className="r">▶</button>
+                </div>
             </div>
             <div className="box2">
                 <div className="featured">
@@ -49,29 +49,29 @@ const Contest = () => {
                 </div>
                 <div className="card1">
                     <div className="inside2">
-                        <a href="" target="_blank">
-                            <img src="/images/air.png" alt="" style={{ height: "154px", width: "100%" }} />
+                        <a href="https://leetcode.com/contest/weekly-contest-291/" target="_blank">
+                            <img src="/images/first.png" alt="" style={{ height: "154px", width: "100%" }} />
                             <div className="data">
-                                <h6>LinkedIn Clone</h6>
-                                <p>This is a Clone of</p>
+                                <h6>Weekly Contest 291</h6>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="mr-1"><path fill-rule="evenodd" d="M14.707 2.707a1 1 0 00-1.414-1.414l-2 2a1 1 0 00-.15 1.221l1.5 2.5a1 1 0 001.714-1.029l-.454-.757a8 8 0 11-6.347 1.119 1 1 0 00-1.112-1.662A9.991 9.991 0 002 13c0 5.523 4.477 10 10 10s10-4.477 10-10c0-4.775-3.347-8.769-7.823-9.762l.53-.53zM13 10a1 1 0 10-2 0v4a1 1 0 00.445.832l3 2a1 1 0 001.11-1.664L13 13.465V10z" clip-rule="evenodd"></path></svg>Ended May 1 2022</p>
                             </div>
                         </a>
                     </div>
                     <div className="inside2">
-                        <a href="" target="_blank">
-                            <img src="/images/air.png" alt="" style={{ height: "154px", width: "100%" }} />
+                        <a href="https://leetcode.com/contest/weekly-contest-290/" target="_blank">
+                            <img src="/images/second.png" alt="" style={{ height: "154px", width: "100%" }} />
                             <div className="data">
-                                <h6>LinkedIn Clone</h6>
-                                <p>This is a Clone of </p>
+                                <h6>Weekly Contest 290</h6>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="mr-1"><path fill-rule="evenodd" d="M14.707 2.707a1 1 0 00-1.414-1.414l-2 2a1 1 0 00-.15 1.221l1.5 2.5a1 1 0 001.714-1.029l-.454-.757a8 8 0 11-6.347 1.119 1 1 0 00-1.112-1.662A9.991 9.991 0 002 13c0 5.523 4.477 10 10 10s10-4.477 10-10c0-4.775-3.347-8.769-7.823-9.762l.53-.53zM13 10a1 1 0 10-2 0v4a1 1 0 00.445.832l3 2a1 1 0 001.11-1.664L13 13.465V10z" clip-rule="evenodd"></path></svg>Ended Apr 24 2022</p>
                             </div>
                         </a>
                     </div>
                     <div className="inside2">
-                        <a href="" target="_blank">
-                            <img src="/images/air.png" alt="" style={{ height: "154px", width: "100%" }} />
+                        <a href="https://leetcode.com/contest/biweekly-contest-85/" target="_blank">
+                            <img src="/images/third.png" alt="" style={{ height: "154px", width: "100%" }} />
                             <div className="data">
-                                <h6>LinkedIn Clone</h6>
-                                <p>This is a Clone of</p>
+                                <h6>Biweekly Contest 85</h6>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" class="mr-1"><path fill-rule="evenodd" d="M14.707 2.707a1 1 0 00-1.414-1.414l-2 2a1 1 0 00-.15 1.221l1.5 2.5a1 1 0 001.714-1.029l-.454-.757a8 8 0 11-6.347 1.119 1 1 0 00-1.112-1.662A9.991 9.991 0 002 13c0 5.523 4.477 10 10 10s10-4.477 10-10c0-4.775-3.347-8.769-7.823-9.762l.53-.53zM13 10a1 1 0 10-2 0v4a1 1 0 00.445.832l3 2a1 1 0 001.11-1.664L13 13.465V10z" clip-rule="evenodd"></path></svg>Ended Aug 20 2022</p>
                             </div>
                         </a>
                     </div>
@@ -106,6 +106,18 @@ const Contest = () => {
                             <Full1>
                                 <Left>
                                     <td className="td1"><img src="/images/one.png" alt="" /><div className="data"> <div className="up">Weekly Contest 310</div>
+                                        <div className="down">Oct 30, 2022 8:00 PM GMT+5:30</div></div></td>
+                                </Left>
+                                <img src="/images/inside2.png" alt="" />
+                                <Right>
+                                    <td className="td2">Virtual</td>
+                                </Right>
+                            </Full1>
+                        </tr>
+                        <tr className="active-row">
+                            <Full1>
+                                <Left>
+                                    <td className="td1"><img src="/images/two.png" alt="" /><div className="data"> <div className="up">Weekly Contest 311</div>
                                         <div className="down">Oct 1, 2022 8:00 PM GMT+5:30</div></div></td>
                                 </Left>
                                 <Right>
@@ -116,8 +128,8 @@ const Contest = () => {
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1"><img src="/images/one.png" alt="" /><div className="data"> <div className="up">Weekly Contest 310</div>
-                                        <div className="down">Oct 1, 2022 8:00 PM GMT+5:30</div></div></td>
+                                    <td className="td1"><img src="/images/three.png" alt="" /><div className="data"> <div className="up">Weekly Contest 312</div>
+                                        <div className="down">Nov 20, 2022 8:00 PM GMT+5:30</div></div></td>
                                 </Left>
                                 <Right>
                                     <td className="td2">Virtual</td>
@@ -127,9 +139,10 @@ const Contest = () => {
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1"><img src="/images/one.png" alt="" /><div className="data"> <div className="up">Weekly Contest 310</div>
-                                        <div className="down">Oct 1, 2022 8:00 PM GMT+5:30</div></div></td>
+                                    <td className="td1"><img src="/images/four.jpg" alt="" /><div className="data"> <div className="up">Weekly Contest 313</div>
+                                        <div className="down">Dec 23, 2022 8:00 PM GMT+5:30</div></div></td>
                                 </Left>
+                                <img src="/images/inside.png" alt="" />
                                 <Right>
                                     <td className="td2">Virtual</td>
                                 </Right>
@@ -138,19 +151,8 @@ const Contest = () => {
                         <tr className="active-row">
                             <Full1>
                                 <Left>
-                                    <td className="td1"><img src="/images/one.png" alt="" /><div className="data"> <div className="up">Weekly Contest 310</div>
-                                        <div className="down">Oct 1, 2022 8:00 PM GMT+5:30</div></div></td>
-                                </Left>
-                                <Right>
-                                    <td className="td2">Virtual</td>
-                                </Right>
-                            </Full1>
-                        </tr>
-                        <tr className="active-row">
-                            <Full1>
-                                <Left>
-                                    <td className="td1"><img src="/images/one.png" alt="" /><div className="data"> <div className="up">Weekly Contest 310</div>
-                                        <div className="down">Oct 1, 2022 8:00 PM GMT+5:30</div></div></td>
+                                    <td className="td1"><img src="/images/aire.png" alt="" /><div className="data"> <div className="up">Weekly Contest 314</div>
+                                        <div className="down">Jan 4, 2022 8:00 PM GMT+5:30</div></div></td>
                                 </Left>
                                 <Right>
                                     <td className="td2">Virtual</td>
